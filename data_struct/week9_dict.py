@@ -23,13 +23,13 @@ for line in handle:
     if len(words) == 0 : continue
     if words[0] != 'From' : continue
     lst.append(words[1])
-#print lst
+print lst
 
 # var2 Add key: value in dict
 counts = dict()
 for nemail in lst:
     counts[nemail] = counts.get(nemail,0) + 1
-#print counts
+print counts
 
 # count to big value
 bigmail = None
